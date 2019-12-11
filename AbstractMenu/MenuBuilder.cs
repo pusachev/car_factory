@@ -13,12 +13,12 @@ namespace AbstractMenu
 
         public IMenuBuilder Add(IMenuItem menuItem)
         {
-            if (collection.ContainsKey(menuItem.getCode()))
+            if (collection.ContainsKey(menuItem.GetCode()))
             {
-                throw new MenuBuilderException(String.Format("Menu Item with code {0} already exists", menuItem.getCode()));
+                throw new MenuBuilderException(String.Format("Menu Item with code {0} already exists", menuItem.GetCode()));
             }
 
-            collection.Add(menuItem.getCode(), menuItem);
+            collection.Add(menuItem.GetCode(), menuItem);
 
             return this;
         }
