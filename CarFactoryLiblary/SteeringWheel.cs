@@ -1,9 +1,9 @@
 ﻿using System;
 namespace CarFactoryLiblary
 {
-    public class SteeringWheel
+    public class SteeringWheel : AbstractItem
     {
-        public SteeringWheel()
+        public SteeringWheel(string name) : base(name)
         {
         }
     }

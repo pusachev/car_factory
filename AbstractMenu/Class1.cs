@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Console.Menu
+namespace AbstractMenu
 {
     public class Class1
     {

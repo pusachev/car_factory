@@ -1,9 +1,9 @@
 ﻿using System;
 namespace CarFactoryLiblary
 {
-    public class Motor
+    public class Motor : AbstractItem
     {
-        public Motor()
+        public Motor(string name) : base (name)
         {
         }
     }

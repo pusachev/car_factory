@@ -1,9 +1,9 @@
 ﻿using System;
 namespace CarFactoryLiblary
 {
-    public class Seat
+    public class Seat : AbstractItem
     {
-        public Seat()
+        public Seat(string name) : base (name)
         {
         }
     }
