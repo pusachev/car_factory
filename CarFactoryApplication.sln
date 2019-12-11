@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarFactoryLiblary", "CarFac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractMenu", "AbstractMenu\AbstractMenu.csproj", "{8D43DC25-4D1C-490E-A761-F0F14883E817}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarMenu", "CarMenu\CarMenu.csproj", "{4DE3D652-C81B-42B0-B93A-D7F8762ADE45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{8D43DC25-4D1C-490E-A761-F0F14883E817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D43DC25-4D1C-490E-A761-F0F14883E817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D43DC25-4D1C-490E-A761-F0F14883E817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DE3D652-C81B-42B0-B93A-D7F8762ADE45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE3D652-C81B-42B0-B93A-D7F8762ADE45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE3D652-C81B-42B0-B93A-D7F8762ADE45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE3D652-C81B-42B0-B93A-D7F8762ADE45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

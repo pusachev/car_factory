@@ -1,9 +1,9 @@
 ﻿using System;
-namespace ConsoleMenu
+namespace AbstractMenu
 {
     public interface IMenuItem
     {
-        public int getCode();
+        public int GetCode();
 
         public string GetLabel();
 

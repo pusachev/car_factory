@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ConsoleMenu
+namespace AbstractMenu
 {
     public interface IMenuBuilder
     {
