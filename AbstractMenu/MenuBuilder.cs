@@ -25,7 +25,7 @@ namespace AbstractMenu
 
         private IMenuItem GetMenuItem(int code)
         {
-            if (collection.ContainsKey(code))
+            if (!collection.ContainsKey(code))
             {
                 throw new MenuBuilderException(String.Format("Menu Item with code {0} already exists", code));
             }
@@ -60,27 +60,34 @@ namespace AbstractMenu
                 Console.Clear();
                 Show();
 
-                Console.WriteLine("Please enter correct menu number");
-                string data = System.Console.ReadLine();
+                Console.WriteLine("Enter escape to exit or enter to continue: ");
 
-                if (Console.ReadKey().Key != System.ConsoleKey.Escape)
+                if (Console.ReadKey().Key == ConsoleKey.Escape)
                 {
                     Console.WriteLine("Bye!");
                     break;
                 }
 
+                Console.WriteLine("Please enter correct menu number");
+                Console.Write("Your choice: ");
+
+                string data = Console.ReadLine();
+
                 try
                 {
                     GetMenuItem(data).Execute();
-
+                    Console.WriteLine("Press enter to continue");
+                    Console.ReadLine();
                 }
                 catch (InputValidateException e)
                 {
                     Console.WriteLine("Please enter valid menu number");
+                    Console.ReadLine();
                 }
                 catch (MenuBuilderException e)
                 {
                     Console.WriteLine("Please enter valid menu number");
+                    Console.ReadLine();
                 }
 
             }

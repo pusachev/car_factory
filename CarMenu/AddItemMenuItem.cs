@@ -30,7 +30,7 @@ namespace CarMenu
             Console.WriteLine("Add Item to factory");
             IItem item = ItemsGenerator.Generate();
             CarFactory.Add(item);
-            Console.WriteLine("Item {0} added to car factory");
+            Console.WriteLine("Item {0} added to car factory", item.GetName());
         }
     }
 }

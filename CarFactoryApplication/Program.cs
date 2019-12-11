@@ -1,5 +1,7 @@
 ﻿using System;
 using AbstractMenu;
+using CarFactoryLiblary;
+using CarMenu;
 
 namespace CarFactoryApplication
 {
@@ -8,8 +10,12 @@ namespace CarFactoryApplication
         static void Main(string[] args)
         {
             MenuBuilder menuBuilder = new MenuBuilder();
+            CarFactory carFactory = new CarFactory();
+            ItemsGenerator itemsGenerator = new ItemsGenerator();
 
-            Console.WriteLine("Hello World!");
+            menuBuilder.Add(new AddItemMenuItem(itemsGenerator, carFactory));
+
+            menuBuilder.Execute();
         }
     }
 }

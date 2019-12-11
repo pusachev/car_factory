@@ -8,5 +8,6 @@
   <ItemGroup>
     <ProjectReference Include="..\AbstractMenu\AbstractMenu.csproj" />
     <ProjectReference Include="..\CarFactoryLiblary\CarFactoryLiblary.csproj" />
+    <ProjectReference Include="..\CarMenu\CarMenu.csproj" />
   </ItemGroup>
 </Project>
